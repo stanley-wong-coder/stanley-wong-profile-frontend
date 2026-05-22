@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stanley Wong – Model Validation Specialist</title>
+    <title>Stanley Wong | Quant · Engineer · Lawyer</title>
     <style>
-        /* ==========================================
-           GLOBAL RESET & BASE
-           ========================================== */
         * {
             margin: 0;
             padding: 0;
@@ -19,332 +16,256 @@
             background: #ffffff;
             color: #1a1a1a;
             line-height: 1.7;
-            max-width: 860px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 40px 24px;
         }
 
-         /* ==========================================
-           NAVIGATION BANNER
-           ========================================== */
-        .nav-banner {
-            margin-bottom: 30px;
-            padding: 14px 20px;
-            background: #f5f5f5;
-            border: 1px solid #e0e0e0;
+        h1 {
+            font-size: 42px;
+            font-weight: 600;
             text-align: center;
-            font-size: 15px;
-        }
-        
-        .nav-banner a {
-            color: #1a1a1a;
-            font-weight: 600;
-            text-decoration: none;
-            border-bottom: 2px solid #555555;
-            padding-bottom: 2px;
-        }
-        
-        .nav-banner a:hover {
-            border-bottom-color: #1a1a1a;
-        }       
-        
-        /* ==========================================
-           HEADER
-           ========================================== */
-        header {
-            margin-bottom: 40px;
-            border-bottom: 1px solid #cccccc;
-            padding-bottom: 28px;
+            margin-bottom: 8px;
         }
 
-        header h1 {
-            font-size: 34px;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-
-        header .title {
+        .tagline {
+            text-align: center;
             font-size: 18px;
-            color: #444444;
-            margin-bottom: 10px;
+            color: #555555;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 24px;
         }
 
-        header .contact {
+        /* Cards section */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 320px;
+            border: 1px solid #cccccc;
+            padding: 32px 24px;
+            background: #fafafa;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            border-color: #555555;
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .card p {
             font-size: 14px;
             color: #555555;
-            line-height: 1.8;
-        }
-
-        header .contact a {
-            color: #1a1a1a;
-            text-decoration: none;
-            border-bottom: 1px solid #999999;
-        }
-
-        /* ==========================================
-           SECTION HEADINGS
-           ========================================== */
-        h2 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-top: 36px;
-            margin-bottom: 16px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 8px;
-        }
-
-        /* ==========================================
-           EXPERIENCE & EDUCATION ITEMS
-           ========================================== */
-        .item {
             margin-bottom: 24px;
+            flex: 1;
         }
 
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 4px;
-        }
-
-        .item-header .role {
-            font-weight: 600;
-            font-size: 16px;
-        }
-
-        .item-header .dates {
+        .card .btn {
+            display: inline-block;
+            padding: 10px 22px;
+            border: 1px solid #333333;
+            background: #ffffff;
+            color: #1a1a1a;
             font-size: 14px;
-            color: #666666;
+            font-weight: 500;
+            text-align: center;
+            align-self: flex-start;
+            transition: background 0.2s ease, color 0.2s ease;
         }
 
-        .item .organisation {
-            font-size: 15px;
-            color: #444444;
-            margin-bottom: 6px;
+        .card .btn:hover {
+            background: #1a1a1a;
+            color: #ffffff;
         }
 
-        .item ul {
-            padding-left: 20px;
-            font-size: 14px;
-            color: #333333;
+        /* Contact form section */
+        .contact-section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 32px;
+            background: #f5f5f5;
+            border: 1px solid #e0e0e0;
         }
 
-        .item ul li {
-            margin-bottom: 4px;
-        }
-
-        /* ==========================================
-           SKILLS GRID
-           ========================================== */
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 12px;
-        }
-
-        .skill-tag {
-            background: #f0f0f0;
-            padding: 6px 16px;
-            font-size: 13px;
-            color: #333333;
-        }
-
-        /* ==========================================
-           PROFILE SUMMARY
-           ========================================== */
-        .profile-summary {
-            font-size: 15px;
-            color: #333333;
-            margin-bottom: 10px;
-        }
-
-        /* ==========================================
-           FOOTER
-           ========================================== */
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #cccccc;
-            font-size: 12px;
-            color: #999999;
+        .contact-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
             text-align: center;
         }
 
-        footer a {
-            color: #666666;
-            text-decoration: none;
+        .form-group {
+            margin-bottom: 20px;
         }
 
-        /* ==========================================
-           RESPONSIVE
-           ========================================== */
-        @media (max-width: 600px) {
-            .item-header {
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #333333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cccccc;
+            font-family: inherit;
+            font-size: 14px;
+            background: #ffffff;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background: #1a1a1a;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        button:hover {
+            background: #333333;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #cccccc;
+            font-size: 13px;
+            color: #777777;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
                 flex-direction: column;
+                align-items: center;
             }
-            header h1 {
-                font-size: 26px;
+            .card {
+                max-width: 400px;
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Stanley Wong</h1>
-        <p class="title">Model Validation Specialist | Market Risk & Quantitative Analytics</p>
-        <p class="contact">
-            📧 <a href="mailto:wongstanley15@gmail.com">wongstanley15@gmail.com</a> &nbsp;|&nbsp;
-            📍 Rotterdam, Netherlands &nbsp;|&nbsp;
-            🔗 <a href="https://www.linkedin.com/in/stanleywong15/">LinkedIn</a>
-        </p>
-    </header>
+    <h1>Stanley Wong</h1>
+    <div class="tagline">Quantitative Finance · Software Engineering · Employment Law</div>
 
-    <!-- NAVIGATION BANNER -->
-    <div class="nav-banner">
-        📄 <a href="legal-cases.html">View my Employment Tribunal Case Portfolio →</a>
+    <!-- Three career paths -->
+    <div class="cards">
+        <a href="quant/quant-cv.html" class="card">
+            <h2>📊 Quant Finance</h2>
+            <p>Model Validation Specialist with experience in market risk, stress testing, and valuation control. MSc Econometrics.</p>
+            <span class="btn">View CV →</span>
+        </a>
+
+        <a href="engineer/engineer.html" class="card">
+            <h2>💻 Engineering</h2>
+            <p>Full-stack developer. Built booking systems, e-commerce backends, and static websites. Node.js, React, MongoDB, PostgreSQL.</p>
+            <span class="btn">View Projects →</span>
+        </a>
+
+        <a href="lawyer/law-cases.html" class="card">
+            <h2>⚖️ Legal</h2>
+            <p>Employment Tribunal claims focused on disability discrimination, reasonable adjustments, and victimisation in recruitment.</p>
+            <span class="btn">View Case Portfolio →</span>
+        </a>
     </div>
 
-    <!-- PROFESSIONAL PROFILE -->
-    <section>
-        <h2>Professional Profile</h2>
-        <p class="profile-summary">
-            Model validation specialist with experience across market risk, stress testing,
-            treasury risk, and valuation control. MSc in Econometrics from Erasmus University.
-            Skilled in independent model review, regulatory compliance (PRA/EBA), and
-            quantitative analysis using SAS, Python, and R. Proven ability to identify model
-            weaknesses and communicate findings to stakeholders. Seeking roles in model
-            validation, quantitative risk, or valuation governance where analytical rigour
-            and systematic thinking are valued.
-        </p>
-    </section>
-
-    <!-- CORE COMPETENCIES -->
-    <section>
-        <h2>Core Competencies</h2>
-        <div class="skills-grid">
-            <span class="skill-tag">Model Validation</span>
-            <span class="skill-tag">Market Risk</span>
-            <span class="skill-tag">Stress Testing</span>
-            <span class="skill-tag">Treasury Risk</span>
-            <span class="skill-tag">Valuation Control</span>
-            <span class="skill-tag">PRA/EBA Requirements</span>
-            <span class="skill-tag">IRB</span>
-            <span class="skill-tag">IFRS9</span>
-            <span class="skill-tag">Prudent Valuation</span>
-            <span class="skill-tag">Fair Value Adjustments</span>
-            <span class="skill-tag">SAS</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">R</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Power BI</span>
-            <span class="skill-tag">Statistical Modelling</span>
-            <span class="skill-tag">Independent Price Verification</span>
-            <span class="skill-tag">Stakeholder Communication</span>
-        </div>
-    </section>
-
-    <!-- PROFESSIONAL EXPERIENCE -->
-    <section>
-        <h2>Professional Experience</h2>
-
-        <!-- Job 1 -->
-        <div class="item">
-            <div class="item-header">
-                <span class="role">Model Validation Manager</span>
-                <span class="dates">Dates – Present</span>
+    <!-- Contact form -->
+    <div class="contact-section">
+        <h2>Get in touch</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
             </div>
-            <p class="organisation">TSB Bank</p>
-            <ul>
-                <li>Led independent validation of models across multiple risk categories including market risk, credit risk, and treasury.</li>
-                <li>Reviewed model documentation, assumptions, and performance against regulatory standards (PRA/EBA).</li>
-                <li>Prepared validation reports and presented findings to senior management and model owners.</li>
-                <li>Managed a pipeline of validation projects and coordinated with model developers to resolve identified issues.</li>
-            </ul>
-        </div>
-
-        <!-- Job 2 -->
-        <div class="item">
-            <div class="item-header">
-                <span class="role">IPV Analyst</span>
-                <span class="dates">Nov 2023 – May 2024</span>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
             </div>
-            <p class="organisation">Phoenix Group Management Services Ltd</p>
-            <ul>
-                <li>Performed independent price verification across multiple asset classes.</li>
-                <li>Reviewed PVA and FVA outputs against PRA/CRR requirements.</li>
-                <li>Developed and maintained valuation models supporting fair value adjustments.</li>
-                <li>Collaborated with front office and risk teams to resolve valuation discrepancies.</li>
-            </ul>
-        </div>
-
-        <!-- Job 3 -->
-        <div class="item">
-            <div class="item-header">
-                <span class="role">Model Validation Analyst</span>
-                <span class="dates">Dates</span>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="Quant Finance">Quant Finance</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
-            <p class="organisation">HSBC</p>
-            <ul>
-                <li>Validated pricing and risk models across multiple asset classes.</li>
-                <li>Conducted independent review of Prudent Valuation and Fair Value Adjustment methodologies.</li>
-                <li>Ensured compliance with PRA and EBA regulatory requirements for model risk management.</li>
-                <li>Produced validation documentation and tracked remediation actions.</li>
-            </ul>
-        </div>
-
-        <!-- Additional experience can be added following the same pattern -->
-    </section>
-
-    <!-- EDUCATION -->
-    <section>
-        <h2>Education</h2>
-        <div class="item">
-            <div class="item-header">
-                <span class="role">MSc Econometrics</span>
-                <span class="dates">Dates</span>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <p class="organisation">Erasmus University Rotterdam</p>
-            <ul>
-                <li>Specialisation in quantitative finance and time series analysis.</li>
-                <li>Thesis: [Title if relevant]</li>
-            </ul>
-        </div>
-        <div class="item">
-            <div class="item-header">
-                <span class="role">BSc [Field]</span>
-                <span class="dates">Dates</span>
-            </div>
-            <p class="organisation">[University Name]</p>
-        </div>
-    </section>
+            <button type="submit">Send message</button>
+        </form>
+        <p style="font-size: 12px; color: #777777; margin-top: 16px; text-align: center;">📋 Your message will be sent to <a href="mailto:wongstanley15@gmail.com">wongstanley15@gmail.com</a></p>
+    </div>
 
-    <!-- CERTIFICATIONS -->
-    <section>
-        <h2>Professional Qualifications</h2>
-        <ul>
-            <li>[Name of actuarial or risk qualification, if any]</li>
-            <li>[Any relevant certifications in SAS, Python, financial risk management]</li>
-        </ul>
-    </section>
-
-    <!-- LANGUAGES -->
-    <section>
-        <h2>Languages</h2>
-        <div class="skills-grid">
-            <span class="skill-tag">English – Proficient</span>
-            <span class="skill-tag">Dutch – [Level]</span>
-            <!-- Add additional languages -->
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 Stanley Wong</p>
     </footer>
 
+    <script>
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !message) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+
+                // Send to Formspree (free email service)
+                const formspreeUrl = 'https://formspree.io/f/xzdwgdrr';
+                
+                try {
+                    const response = await fetch(formspreeUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name, email, subject, message })
+                    });
+                    if (response.ok) {
+                        alert('✅ Message sent — I\'ll get back to you shortly.');
+                        form.reset();
+                    } else {
+                        alert('❌ Something went wrong. Please try again or email me directly.');
+                    }
+                } catch (error) {
+                    alert('❌ Error sending message. Please email me directly at wongstanley15@gmail.com');
+                }
+            });
+        }
+    </script>
 </body>
 </html>

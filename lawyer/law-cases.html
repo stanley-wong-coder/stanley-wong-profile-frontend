@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Wong – Legal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.7;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            margin-right: 24px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 28px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        header .subtitle {
+            font-size: 18px;
+            color: #555555;
+            font-weight: 400;
+        }
+
+        /* About section */
+        .about {
+            margin-bottom: 48px;
+        }
+
+        .about h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        .about p {
+            font-size: 15px;
+            color: #333333;
+        }
+
+        /* Case grid */
+        .case-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            margin-bottom: 48px;
+        }
+
+        .case-card {
+            flex: 1 1 280px;
+            max-width: 460px;
+            border: 1px solid #cccccc;
+            padding: 24px;
+            background: #fafafa;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.2s ease;
+        }
+
+        .case-card:hover {
+            border-color: #555555;
+        }
+
+        .case-card .case-ref {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #666666;
+            margin-bottom: 10px;
+        }
+
+        .case-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .case-card .respondent {
+            font-size: 14px;
+            font-weight: 400;
+            color: #444444;
+            margin-bottom: 12px;
+        }
+
+        .case-card .summary {
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.6;
+            flex: 1;
+            margin-bottom: 16px;
+        }
+
+        .case-card .btn-view {
+            display: inline-block;
+            width: fit-content;
+            padding: 8px 20px;
+            border: 1px solid #333333;
+            background: #ffffff;
+            color: #1a1a1a;
+            font-size: 13px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+            align-self: flex-start;
+        }
+
+        .case-card .btn-view:hover {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #cccccc;
+            font-size: 13px;
+            color: #777777;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+            .case-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/">← Back to Home</a>
+        <a href="/quant/quant-cv.html">Quant Finance</a>
+        <a href="/engineer/">Engineering</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Stanley Wong</h1>
+        <p class="subtitle">Employment Tribunal Claims — Case Portfolio</p>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <h2>About This Portfolio</h2>
+        <p>
+            This site presents a selection of employment tribunal claims I have brought relating to
+            disability discrimination, reasonable adjustments, and procedural fairness in recruitment
+            and employment. Each case has been anonymised where appropriate. The documents are
+            provided for transparency and legal reference.
+        </p>
+    </section>
+
+    <!-- Case Grid -->
+    <section class="case-grid">
+    
+        <!-- Case 1: Phoenix Group -->
+        <a href="GoC Anonymised4.pdf" class="case-card">
+            <div class="case-ref">Case No. 15</div>
+            <h3>Disability Discrimination &amp; Unfair Dismissal</h3>
+            <p class="respondent">Respondent: Large insurer</p>
+            <p class="summary">
+                Direct discrimination, failure to make reasonable adjustments, and procedural
+                unfairness during employment and dismissal of an autistic IPV Analyst.
+            </p>
+            <span class="btn-view">View Case</span>
+        </a>
+    
+        <!-- Case 2: HDI AG -->
+        <a href="Claim Anonymised3.pdf" class="case-card">
+            <div class="case-ref">Labour Court Hannover</div>
+            <h3>Discrimination in Recruitment</h3>
+            <p class="respondent">Large German insurer</p>
+            <p class="summary">
+                Cancellation of a pre‑agreed interview immediately after the applicant requested
+                minor communication adjustments consistent with autism.
+            </p>
+            <span class="btn-view">View Case</span>
+        </a>
+    
+        <!-- Case 3: OneSavings Bank -->
+        <a href="GoC Anonymised3.pdf" class="case-card">
+            <div class="case-ref">Employment Tribunal</div>
+            <h3>Direct Discrimination &amp; Victimisation</h3>
+            <p class="respondent">Respondent: FTSE250 Bank</p>
+            <p class="summary">
+                Rejection for a Model Validation role after a 9‑minute interview that ignored
+                agreed adjustments, following protected disclosure of a live Tribunal claim.
+            </p>
+            <span class="btn-view">View Case</span>
+        </a>
+    
+        <!-- Case 4: Barclays -->
+        <a href="GoC Anonymised5.pdf" class="case-card">
+            <div class="case-ref">Employment Tribunal</div>
+            <h3>Victimisation &amp; Failure to Make Adjustments</h3>
+            <p class="respondent">Respondent: FTSE100 Bank</p>
+            <p class="summary">
+                Rejection without interview after disclosing autism and a live discrimination
+                claim, despite a senior hiring manager previously encouraging the application.
+            </p>
+            <span class="btn-view">View Case</span>
+        </a>
+    
+        <!-- Case 5: J.P. Morgan -->
+        <a href="GoC Anonymised1.pdf" class="case-card">
+            <div class="case-ref">Employment Tribunal</div>
+            <h3>Victimisation in Recruitment</h3>
+            <p class="respondent">Respondent: Investment Bank</p>
+            <p class="summary">
+                Exclusion from interview after disclosing a live disability discrimination
+                claim during a screening call that the recruiter had initiated.
+            </p>
+            <span class="btn-view">View Case</span>
+        </a>
+    
+        <!-- Case 6: BlackRock -->
+        <a href="GoC Anonymised2.pdf" class="case-card">
+            <div class="case-ref">Employment Tribunal</div>
+            <h3>Direct Discrimination &amp; Reclassification of Interview</h3>
+            <p class="respondent">Respondent: Wealth Manager</p>
+            <p class="summary">
+                A scheduled competitive interview was downgraded to a "Meet and Greet"
+                immediately after the applicant described adjustment needs consistent with autism.
+            </p>
+            <span class="btn-view">View Case</span>
+        </a>
+    
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Stanley Wong. All rights reserved. This site is provided for legal portfolio purposes.</p>
+    </footer>
+
+</body>
+</html>

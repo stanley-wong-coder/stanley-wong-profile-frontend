@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Wong – Model Validation Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.7;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            margin-right: 24px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 28px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        header .title {
+            font-size: 18px;
+            color: #555555;
+            margin-bottom: 10px;
+        }
+
+        header .contact {
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.8;
+        }
+
+        header .contact a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #999999;
+        }
+
+        /* Section headings */
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        /* Experience items */
+        .item {
+            margin-bottom: 28px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+
+        .item-header .role {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .item-header .dates {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .item .organisation {
+            font-size: 15px;
+            color: #444444;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .item ul {
+            padding-left: 20px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .item ul li {
+            margin-bottom: 6px;
+        }
+
+        /* Skills grid */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 12px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tag {
+            background: #f0f0f0;
+            padding: 6px 16px;
+            font-size: 13px;
+            color: #333333;
+        }
+
+        /* Profile summary */
+        .profile-summary {
+            font-size: 15px;
+            color: #333333;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Education item */
+        .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .edu-item .degree {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .edu-item .university {
+            font-size: 15px;
+            color: #444444;
+            font-style: italic;
+        }
+
+        .edu-item .dates {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #cccccc;
+            font-size: 13px;
+            color: #777777;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .item-header {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/">← Back to Home</a>
+        <a href="/engineer/">Engineering</a>
+        <a href="/lawyer/">Legal</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Stanley Wong</h1>
+        <p class="title">Quantitative Risk Management · Model Validation · Market Risk</p>
+        <p class="contact">
+            📧 <a href="mailto:wongstanley15@gmail.com">wongstanley15@gmail.com</a> &nbsp;|&nbsp;
+            📍 Rotterdam, Netherlands &nbsp;|&nbsp;
+            🔗 <a href="https://www.linkedin.com/in/stanleywong15/">LinkedIn</a>
+        </p>
+    </header>
+
+    <!-- Professional Profile -->
+    <section>
+        <h2>Professional Profile</h2>
+        <p class="profile-summary">
+            Quantitative risk management specialist with over five years of experience across market risk, model validation, and risk analytics within banking and insurance. Responsible for contributing to, challenging, and validating quantitative risk frameworks for risk measurement and management, including VaR and stress testing. Proficient in Python and R for statistical modelling, large dataset analysis, and automation. Holds an MSc in Econometrics (Erasmus University) and a BSc in Applied Physics (TU Delft). Experienced in regulatory interaction, formal challenge, and the ownership and enforcement of defensible risk methodologies under regulatory scrutiny.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">Quantitative & Validation Analysis</span>
+            <span class="skill-tag">Python & R</span>
+            <span class="skill-tag">Statistical Modelling</span>
+            <span class="skill-tag">VaR & Stress Testing</span>
+            <span class="skill-tag">Model Risk Governance</span>
+            <span class="skill-tag">Regulatory Compliance (PRA/CRR)</span>
+            <span class="skill-tag">Excel for Control & Review</span>
+            <span class="skill-tag">SAS</span>
+            <span class="skill-tag">Power BI</span>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+        <h2>Experience</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="role">IPV Analyst</span>
+                <span class="dates">Nov 2023 – May 2024</span>
+            </div>
+            <p class="organisation">Phoenix Group</p>
+            <ul>
+                <li>Performed independent Line 2 review of bond spread inputs used in the valuation of fixed-income and illiquid credit portfolios.</li>
+                <li>Assessed the reasonableness of observed and model-implied credit spreads and liquidity premia as part of the Group IPV process.</li>
+                <li>Challenged valuation outputs where spread assumptions were inconsistent with market evidence or valuation standards.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="role">Model Validation Manager</span>
+                <span class="dates">Dec 2019 – Aug 2021</span>
+            </div>
+            <p class="organisation">TSB Bank</p>
+            <ul>
+                <li>Led independent validation of market risk and treasury risk models, including interest rate risk, liquidity risk, and hedging models used for risk management and regulatory purposes.</li>
+                <li>Reviewed model design, assumptions, calibration approaches, and known limitations to assess model appropriateness and fitness for use.</li>
+                <li>Issued validation conclusions, identified material model risk issues, and recommended remediation actions in line with model risk governance standards.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="role">Prudent Valuation Analyst</span>
+                <span class="dates">May 2018 – Sep 2018</span>
+            </div>
+            <p class="organisation">HSBC</p>
+            <ul>
+                <li>Reviewed and challenged prudent valuation and fair value adjustment outputs for trading book positions to ensure regulatory defensibility.</li>
+                <li>Assessed reserve levels for illiquid products, focusing on uncertainty, model limitations, and conservatism in line with prudent valuation standards.</li>
+                <li>Validated key valuation and risk parameters through independent review against PRA and CRR requirements, with findings documented for governance and audit purposes.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="role">Solvency II Internal Model Analyst</span>
+                <span class="dates">Jan 2018 – Apr 2018</span>
+            </div>
+            <p class="organisation">Reaal Insurance</p>
+            <ul>
+                <li>Executed the Solvency II internal model to assess regulatory capital requirements under 1-in-200 stress scenarios.</li>
+                <li>Analysed credit risk and market risk components of the internal model, interpreting capital impacts and key risk drivers.</li>
+                <li>Performed analytical checks on internal model outputs, including plausibility and sensitivity analysis, to support internal validation activities.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="role">Pricing Analyst</span>
+                <span class="dates">May 2017 – Nov 2017</span>
+            </div>
+            <p class="organisation">TE Connectivity</p>
+            <ul>
+                <li>Executed pricing processes for energy products, with a focus on price and volume risk and associated hedging mechanics.</li>
+                <li>Identified and resolved data and model issues in pricing tools, improving robustness and reliability of outputs delivered to the business.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="role">Market Risk Analyst (Contract)</span>
+                <span class="dates">Jun 2016 – Sep 2016</span>
+            </div>
+            <p class="organisation">Total Gas and Power</p>
+            <ul>
+                <li>Supported market risk analysis for energy trading operations.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="role">Risk Pricing Analyst</span>
+                <span class="dates">Apr 2014 – Apr 2015</span>
+            </div>
+            <p class="organisation">Reaal Insurance</p>
+            <ul>
+                <li>Performed quantitative risk pricing analysis for property and casualty insurance products using large SAS datasets.</li>
+                <li>Analysed pricing assumptions and competitive benchmarks to understand the relationship between risk characteristics and premium levels.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+
+        <div class="edu-item">
+            <div class="item-header">
+                <span class="degree">MSc Actuarial and Financial Engineering</span>
+                <span class="dates">Sep 2024 – present</span>
+            </div>
+            <p class="university">KU Leuven</p>
+            <p class="profile-summary" style="margin-top: 4px;">Focus on regulatory capital modelling, financial risk theory, and quantitative methods under Solvency II.</p>
+        </div>
+
+        <div class="edu-item">
+            <div class="item-header">
+                <span class="degree">MSc Econometrics</span>
+                <span class="dates">Sep 2011 – Aug 2013</span>
+            </div>
+            <p class="university">Erasmus University Rotterdam</p>
+            <p class="profile-summary" style="margin-top: 4px;">Advanced training in statistical inference, Bayesian methods, and time series econometrics.</p>
+        </div>
+
+        <div class="edu-item">
+            <div class="item-header">
+                <span class="degree">BSc Applied Physics</span>
+                <span class="dates">Sep 2005 – Aug 2010</span>
+            </div>
+            <p class="university">Delft University of Technology</p>
+            <p class="profile-summary" style="margin-top: 4px;">Strong quantitative and first-principles scientific training in mathematics and physics.</p>
+        </div>
+
+        <div class="edu-item">
+            <div class="item-header">
+                <span class="degree">BA Chinastudies</span>
+                <span class="dates">Sep 2006 – Aug 2011</span>
+            </div>
+            <p class="university">Leiden University</p>
+            <p class="profile-summary" style="margin-top: 4px;">Interdisciplinary study of China's economic, political, and institutional systems.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Stanley Wong</p>
+    </footer>
+
+</body>
+</html>

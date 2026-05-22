@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Wong | Full-Stack Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.7;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        nav {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            margin-right: 24px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #555555;
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            background: #fafafa;
+        }
+
+        .project-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #555555;
+            margin-bottom: 16px;
+        }
+
+        .project-card .tech {
+            font-size: 12px;
+            color: #888888;
+            margin-bottom: 16px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .project-links a {
+            font-size: 14px;
+            color: #1a1a1a;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .skill-tag {
+            background: #f0f0f0;
+            padding: 6px 16px;
+            font-size: 13px;
+            color: #333333;
+        }
+
+        .github-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .github-link:hover {
+            background: #333333;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #cccccc;
+            font-size: 13px;
+            color: #777777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../">← Back to Home</a>
+        <a href="../quant/quant-cv.html">Quant Finance</a>
+        <a href="../lawyer/">Legal</a>
+    </nav>
+
+    <h1>Stanley Wong</h1>
+    <div class="subtitle">Full-Stack Engineer</div>
+
+    <p>I build web applications with a focus on clean code, practical solutions, and end-to-end development. Here are some of my recent projects.</p>
+
+    <!-- Projects section -->
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+
+        <!-- Project 1: Hostel Booking System -->
+        <div class="project-card">
+            <h3>🏠 Hostel Booking System</h3>
+            <p>Full-stack booking application for a 3-branch hostel. Users can check availability, select dates, and submit booking requests.</p>
+            <div class="tech">Node.js · Express · MongoDB · HTML/CSS/JS</div>
+            <div class="project-links">
+                <a href="https://hostelwarsaw.netlify.app" target="_blank">Live Demo →</a>
+                <a href="https://github.com/stanley-wong-coder/hostel-booking" target="_blank">GitHub →</a>
+            </div>
+        </div>
+
+        <!-- Project 2: Dental Website -->
+        <div class="project-card">
+            <h3>🦷 INE Dental Practice</h3>
+            <p>Professional static website for a dental practice with services overview, fee guide, and contact form.</p>
+            <div class="tech">HTML · CSS · JavaScript · Netlify Forms</div>
+            <div class="project-links">
+                <a href="https://ines-dental.netlify.app" target="_blank">Live Demo →</a>
+                <a href="https://github.com/stanley-wong-coder/ines-dental" target="_blank">GitHub →</a>
+            </div>
+        </div>
+
+        <!-- Project 3: Shoe Shop Backend -->
+        <div class="project-card">
+            <h3>👟 Shoe Shop E‑commerce Backend</h3>
+            <p>Complete e-commerce backend with products, brands, categories, variants (sizes/colors), cart, orders, and admin routes.</p>
+            <div class="tech">Node.js · Express · PostgreSQL · JWT</div>
+            <div class="project-links">
+                <a href="#" target="_blank">API Docs (coming soon)</a>
+                <a href="https://github.com/stanley-wong-coder/shoe-shop-backend" target="_blank">GitHub →</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Skills section -->
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <span class="skill-tag">HTML/CSS/JS</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">Netlify</span>
+        <span class="skill-tag">Render</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">JWT Authentication</span>
+    </div>
+
+    <!-- GitHub link -->
+    <h2>GitHub</h2>
+    <a href="https://github.com/stanley-wong-coder" target="_blank" class="github-link">🔗 View my GitHub profile →</a>
+
+    <footer>
+        <p>© 2026 Stanley Wong</p>
+    </footer>
+
+</body>
+</html>
